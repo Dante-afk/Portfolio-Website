@@ -20,6 +20,7 @@
     transform: translate(-50%, -50%);
     color: white;
 }
-.nav-link {
-    color: black;
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
 }
