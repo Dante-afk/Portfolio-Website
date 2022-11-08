@@ -3,8 +3,12 @@
     height:100vh;
     background: url('images/mypic.jpg');
     background-size:cover;
+    background-color: black;
     position:relative;
 }
+
+
+
 /* text css above my(subject) image*/
 .subject_title {
     font-size: 4.5rem;
@@ -18,9 +22,33 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(254, 253, 253);
 }
+
+
+
 /* about section image css */
 .imageAboutPage {
     width: 100%;
+}
+
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #09a8d0;
+}
+.servicesText:hover {
+    border: 1px solid #09a8d0;
 }
