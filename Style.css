@@ -1,3 +1,7 @@
+.container {
+    color: aliceblue;
+}
+
 /* my homepage background image */
 .bgimage {
     height:100vh;
@@ -51,4 +55,10 @@
 }
 .servicesText:hover {
     border: 1px solid #09a8d0;
+}
+
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
 }
