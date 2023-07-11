@@ -4,11 +4,21 @@
     <title>Dhruv's Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
+    <meta name="keywords" content="dhruv mehta, dhruv, mehta, Dante-afk, amity university, amity, university, student, front-end, web, website, computer, software, developer, engineer, designer, co-op" />
+    <meta name="author" content="Dhruv Mehta" />
+    <meta name="description" content="Web developer, UX Enthusiast, and everything in between." />
+    <meta property="og:description" content="Web developer, UX Enthusiast, and everything in between." />
+    <meta property="og:title" content="Dhruv Mehta's Personal Website" />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- font awesome -->
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
    
@@ -16,7 +26,7 @@
 <body> 
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Dhruv</a>
+            <a class="navbar-brand" href="#home">Dhruv.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +42,10 @@
                         <a class="nav-link" href="#services">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -48,106 +61,269 @@
     <!-- main banner -->
     <section class="bgimage" id="home">
         <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subject-text">
-                <h2 class="subject_title">Hey There!</h2>
-                <h3 class="subject-title"><i>My Name is Dhruv Mehta</i></h3>
-                <p class="subject_desc"><i>I am a Front-End Web Developer</i></p>
-            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 subject-text text-center">
+                    <h1 class="subject-title">Hi, my name is Dhruv</h1>
+                    <p class="subject_desc">Web Developer and UI/UX Enthusiast from India</p>
+                    <a class="fa fa-angle-down page-scroll" href="#about"></a>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- animation-->
-    <section class="animation" id="">
-        <div class="container">
-            <canvas width="600" height="400" id="my_canvas"></canvas>
-        </div>
-    
+       
     </section>
 
     <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/aboutme.jpg" class= "imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> I am student pursuing my bachelors of technology degree in the field of information and technology, who discovered his love for coding.
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Dhruv Mehta</li>
-                                <li>Age: 20</li>
-                                <li>Occupation: Student | Fornt-End Web Developer</li>
-
-                            </ul>
-                        </div>
-                        <!--<div class="col-md-6">
-                            <ul>
-                                <li>Name: Dhruv Mehta</li>
-                                <li>Age: 20</li>
-                                <li>Occupation: Student | Web Developer</li>
-
-                            </ul>
-                        </div>-->
-                    </div>
-                    <div class="row mt-3">
-                        <p> A student with an interest in Web Development and Artificial Intelligence. I'm also a freelancer. I'm also a recently developed competitive coder and I love to solve various different problems using python. My passion for coding enabled me to pursue this path.
-                            
+    <section id="about" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wp1">
+                        <h2>A Little bit about me</h2>
+                        <img src="images/aboutme.jpg" id="prof-pic" />
+                        <p>
+                            Hey! My name is Dhruv and I'm a web developer with a passion for front-End Development and design. I'm currently a fourth year student at
+                            <a href="https://www.amity.edu/jaipur" target="_blank">Amity University Rajasthan</a> persuing a degree in information Technology with a minor in Web Development. I aspire towards a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.
+                            <br>
+                            <br> When I'm not on the computer I enjoy photography, swimming, petting dogs, and enjoy riding my bike; traveling to new places.
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+    
 
 
     <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Skills</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Front-End Web Development</h4>
-                            <p class="card-text mt-3"> Proficient in Front-End Web Development using HTML5, CSS, and JavaScript (React.js and node.js still Learning), with the use of frameworks like Bootstrap.
-                                Beginnner in using Figma, also for designing webpages.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Back-End Web Development</h4>
-                            <p class="card-text mt-3"> Proficient in Python for Back-End Web Development.Experience in DBMS softwares like MySQL for Database Handeling in Back-End Web Development.
-                                
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Version Control</h4>
-                            <p class="card-text mt-3"> Proficient in using Git in a way to track and manage code changes in a project and easily collaborate with my colleagues from different locations.
-                                
-                            </p>
-                        </div>
-                    </div>  
+    <section id="services" class="services-bgimg">
+        <div class="overlay">
+            <div class="container">
+                <h1 class="text-center">WHAT I DO</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-clock"></i>
+                                <h4 class="card-title mt-3">Design</h4>
+                                <p class="card-text mt-3"> Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-layer-group'></i>
+                                <h4 class="card-title mt-3">Development</h4>
+                                <p class="card-text mt-3"> With a strong foundation in Computer science, I'm passionate about web design and development, and interested in Full-Stack and mobile app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.   
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='far servicesIcon fa-check-circle'></i>
+                                <h4 class="card-title mt-3">Collaboration</h4>
+                                <p class="card-text mt-3"> Proficient in using Git in a way to track and manage code changes in a project and easily collaborate with my colleagues from different locations.   
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+    <!--EXPERIENCE section-->
+    <section id="experience">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-8 col-md-8 text-center">
+                    <h2>EXPERIENCE</h2>
+                    <p>I've been doing web development for about 3 years now, and I'm always eager to learn more in this ever changing industry.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-8 col-md-6 text-center skills-section wp3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3><b>Some technologies I've worked with:</b></h3>
+                        </div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/html.png" id="html"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/css.png" id="css"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/sass.png" id="sass"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/js.png" id="js"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/sql.png" id="sql"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/python.png" id="python"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/jquery.png" id="jquery"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/bootstrap.png" id="bootstrap"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/node.png" id="node"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/mongodb.png"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/github.png"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/photoshop.png"></div>
+                        <div class="col-xs-3 col-sm-2 col-md-2 skill-icon"><img class="img-responsive" src="images/linux.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-3 employment wp3">
+                    <div class="text-center places-worked">
+                        <h3><b>Where I've Worked:</b></h3>
+                        <a href="https://www.verzeo.com/" target="_blank">
+                            <img id="verzeo-logo" src="images/verzeologo.png" alt="verzeo" />
+                        </a>
+                        <a href="https://www.amity.edu/jaipur/" target="_blank">
+                            <img id="amity-logo" src="images/amitylogo.jpg" alt="Amity" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /row -->
+        </div>
+        <!-- Container-->
+    </section>
+
+
+    <!--Projects section-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">What I've created</h2>
+                <h5 class="coming-soon">(more coming soon)</h5>
+            </div>
+            <div class="row portfolio-row">
+                <div class="portfolio-item-wrapper wp5">
+                    <div class="portfolio-item" data-toggle="modal" href="#LuggageHeroModal">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="images/LuggageHero.jpg" alt="image">
+                        <div class="portfolio-info">
+                            <h3>LuggageHero</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper wp5">
+                    <div class="portfolio-item1" data-toggle="modal" data-target="WeatherAppModal">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="images/Weatherapp.png" alt="image">
+                        <div class="portfolio-info">
+                            <h3>Weather-App</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    
+    <!--LuggageHeroModal-->
+    <div class="modal fade" id="LuggageHeroModal" tabindex="-1" role="dialog" aria-labelledby="LuggageHeroModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">LuggageHero</h4>
+                    <h6 class="modal-title-description">Web App</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="images/LuggageHero.jpg" alt="">
+                    </p>
+                    <p class="modal-description">LuggageHero is a web application that was built mainly with HTML, CSS, Javascript, python, SQL as a final year project. Built this web application to help tourists and students like me who travel with excess luggage and usually have no place to temporarily keep them. </br>Tourists or students, such as myself, sometimes have connecting flights or trains, with a lot of time frame in between the stops and have no place to keep the luggage, to roam freely. This webiste acts as a cloak room locator around your location so that you can roam, luggage free!</p>
+                    <p class="visit"><a href="https://github.com/Dante-afk/Luggagehero" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--WeatherAppModal-->
+    <div class="modal fade" id="WeatherAppModal" tabindex="-1" role="dialog" aria-labelledby="WeatherAppModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Weather-App</h4>
+                    <h6 class="modal-title-description">Web app</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="images/Weatherapp.png" alt="">
+                    </p>
+                    <p class="modal-description">Weather-App, as the title suggests, is a small web application to find out the weather of a city. It was built using HTML, CSS and Javascript. I built this web app so that people can get all the weather information needed at a single click without doing any work. <br> It helped me get practical knowledge on web APIs and Javascript. </p>
+                    <br>
+                    <p class="visit"><a href="https://github.com/Dante-afk/Weather-app" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- <h3>Other places you can find me</h3> -->
+                    <ul class="list-inline social-buttons animated fadeIn">
+                        <!-- Facebook Button
+                        <li><a id="facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>-->
+                        <!-- Twitter Button 
+                        <li><a id="twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
+                        <!-- Instagram Button -->
+                        <li><a id="instagram" href="https://www.instagram.com/droov.i/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <!-- Pinterest Button -->
+                        <!-- <li><a id="pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a></li> -->
+                        <!-- Codepen Button -->
+                        <li><a id="codepen" href="https://codepen.io/Dhruv-Mehta" target="_blank"><i class="fa fa-codepen"></i></a></li>
+                        <!-- GitHub Button -->
+                        <li><a id="github" href="https://github.com/Dante-afk" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <!-- LinkedIn Button -->
+                        <li><a id="linkedin" href="https://www.linkedin.com/in/dhruv-mehta02/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    <div class="page-scroll">
+                        <a id="to-top" class="page-scroll" href="#home">
+                            <img id="rocket" src="images/rocket12.png" />
+                        </a>
+                        <p id="to-top-copy">To the top we go!</p>
+                    </div>
+                    <div class="copyright">
+                        <p><i class="fa fa-copyright"></i> Dhruv Mehta 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+    </footer>
+
+
+    <script>
+        $(document).ready(function() {
+          $('.portfolio-item').click(function() {
+            $('#LuggageHeroModal').modal('show');
+          });
+      
+          $('.portfolio-item1').click(function() {
+            $('#WeatherAppModal').modal('show');
+          });
+        });
+      </script>
 
     <script src="script/script.js"></script>
     <script src="script/animation.js"></script>
