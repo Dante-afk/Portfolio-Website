@@ -231,6 +231,9 @@ a.fa.fa-angle-down:focus {
     .skills-section .skill-icon img#node {
         width: 100px;
     }
+    .skills-section .skill-icon img#sql {
+        width: 55px;
+    }
 }
 
 @media screen and (min-width: 985px) {
