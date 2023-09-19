@@ -1,6 +1,6 @@
 # PORTFOLIO WEBSITE
 
-A portfolio Website created by an Undergraduate who has a passiond in web developement.
+A portfolio Website created by an Undergraduate who has a passion in web developement.
 
 ## Preview
 
